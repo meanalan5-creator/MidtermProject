@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="midterm/style.css">
+    <style>
+    
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+        .top-nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:  20px;
+        }
+        .search-box{
+            display: flex;
+        }
+        .search-box input{
+            padding: 6px;
+            width: 500px;
+            border: 1px solid #ccc;
+        }
+        .search-box button{
+            padding: 8px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .right-area{
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .icon-box{
+            position: relative;
+            display: flex;
+            width: 45px;
+            height: 45px;
+            font-size: 25px;
+            cursor: pointer;
+            align-items: center;
+            margin-left: 15px;
+            justify-content: center;
+            background-color: #fff;
+        }
+        .Register{
+            display: flex;
+            
+            color: #ccc;
+            justify-content: center;
+            align-items: center;
+        }
+        .Register p{
+            display: flex;
+            margin-left: 10px;
+        }
+        .navbar{
+            background-color: white;
+            padding: 1px;
+            display: flex;
+            align-items: center;
+            border-bottom:1px solid #ccc;
+            align-items: center;
+           
+          
+        }
+        .menu{
+            display: flex;
+            
+        }
+        .menu li{
+            margin-right: 10px;
+            list-style-type: none;
+            
+        }
+        .menu li a{
+            text-decoration: none;
+            color: gray;
+        }
+        .container{
+            margin-top: 40px;
+        }
+        .list-group li {
+            color: gray;
+        }
+        .list-group-item{
+            width: 300px;
+        }
+        .container2{
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+        .container2 p{
+            color: #413e3e;
+        }
+        .footer{
+            display: flex;
+            margin: 40px;
+            justify-content: space-between;
+            padding: 40px;
+            border-top: 1px solid #ccc;
+        }
+        .menu2 li{
+            list-style-type: none;
+        }
+        .menu2 li a{
+            text-decoration: none;
+            color: rgb(63, 62, 62);
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="header">Company Name</div>
+
+            <div class="search-box">
+                <input type="text" placeholder="search">
+                <button><i class="bi bi-search"></i></button>
+            </div>
+
+            <div class="right-area">
+                <div class="icon-box">
+                  <i class="bi bi-cart2"></i>
+                  <span class="cart"></span>
+
+                <div class="icon-box">
+                    <i class="bi bi-person-fill"></i>
+                </div> 
+                
+              
+            </div>
+        </div>
+  
+    </header>
+    <nav class="navbar">
+         <ul class="menu">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Product</a></li>
+          <li><a href="#">Contact</a></li>
+          
+         </ul>
+     </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-group">
+                    <li class="list-group-item col-md-3">Best clothes</li>
+                    <li class="list-group-item col-md-3">Automobiles</li>
+                    <li class="list-group-item col-md-3">Home interior</li>
+                    <li class="list-group-item col-md-3">Electronics</li>
+                    <li class="list-group-item col-md-3">Technologies</li>
+                    <li class="list-group-item col-md-3">Digital goods</li>
+                    <li class="list-group-item col-md-3">More item</li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../midterm/kid.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../midterm/kid.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../midterm/kid.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <h2>Product</h2>
+
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="../midterm/red.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">Just another product name</p>
+                        <a href="#" class="btn btn-primary">$179.00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="../midterm/cloth4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">Some item name here</p>
+                        <a href="#" class="btn btn-primary">$260.00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="../midterm/red.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">Great product name here</p>
+                        <a href="#" class="btn btn-primary">$170.00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="../midterm/cloth4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">Just another product name</p>
+                        <a href="#" class="btn btn-primary">$180.00</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="../midterm/red.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">Just another product name</p>
+                        <a href="#" class="btn btn-primary">$190.00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="../midterm/cloth4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">Some item name here</p>
+                        <a href="#" class="btn btn-primary">$179.00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="../midterm/red.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">Great product name here</p>
+                        <a href="#" class="btn btn-primary">$200.00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="../midterm/cloth4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">Just another product name</p>
+                        <a href="#" class="btn btn-primary">$170.00</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+   <div class="container2">
+        <h2>Download app demo text</h2>
+        <p>Get an amazing app to make Your life easy</p>
+    </div>
+
+   
+   <div class="footer">
+        <div class="nav-foot">
+            <ul class="menu2"> <b>Brand</b>
+                <li><a href="#">Adidas</a></li>
+                <li><a href="#">Puma</a></li>
+                <li><a href="#">Reebok</a></li>
+                <li><a href="#">Nike</a></li>
+            </ul>
+        </div>
+   
+    <div class="nav-foot">
+                <ul class="menu2"> <b>Company</b>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Find a store</a></li>
+                    <li><a href="#">Rules and terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+        </div>
+        <div class="nav-foot">
+                <ul class="menu2"> <b>Help</b>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Money refund</a></li>
+                    <li><a href="#">Order status</a></li>
+                    <li><a href="#">Shipping info</a></li>
+                    <li><a href="#">Open dispute</a></li>
+                </ul>
+        </div>
+        <div class="nav-foot">
+                <ul class="menu2"> <b>Account</b>
+                    <li><a href="#">User Login</a></li>
+                    <li><a href="#">User register</a></li>
+                    <li><a href="#">Account Setting</a></li>
+                    <li><a href="#">My Orders</a></li>
+                </ul>
+        </div>
+        <div class="nav-foot">
+                <ul class="menu2"> <b>Social</b>
+                    <li><a href="#">@ Facebook</a></li>
+                    <li><a href="#">y Twitter</a></li>
+                    <li><a href="#">Reebok</a></li>
+                    <li><a href="#">© Instagram</a></li>
+                    <li><a href="#">* Youtube</a></li>
+                </ul>
+        </div>
+  </div>
+  
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
